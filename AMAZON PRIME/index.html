@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://preeminent-marzipan-04585e.netlify.app/index.html -->
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>AMAZON PRIME</title>
+     <link rel="stylesheet" href="/index.css">
+
+</head>
+
+<body>
+     <nav>
+          <div id="navbar">
+     <div class="left">
+          <img src="https://amazonuk.gcs-web.com/system/files-encrypted/nasdaq_kms/inline-images/Prime_Video_Logo.png"
+               alt="">
+          <p><a href="">home</a></p>
+          <p><a href="">store</a></p>
+          <p><a href="">channels</a></p>
+          <p><a href="">categories</a></p>
+          <p><a href="">my stuff</a></p>
+     </div>
+          <div class="right">
+               <input type="text" id="query" placeholder="Search movie" oninput="debounce(1000, getData)">
+          </div>
+          </div>
+     </nav>
+     <div id="slide"></div>
+     <div id="slide-btn">
+          <div onclick="slider(-1)" class="prives btn_2">&#10094;</div>
+          <div onclick="slider(1)" class="next btn_2">&#10095;</div>
+     </div>
+
+     <div id="display"></div>
+</body>
+</html>
+<script src="/index.js"></script>
